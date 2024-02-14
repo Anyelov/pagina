@@ -1,0 +1,541 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+/* Estilos para dispositivos de pantalla pequeña */
+/*telefonos*/
+@media screen and (max-width: 568px) {
+  .nombre {
+      font-size: auto;
+  }
+
+  header{
+      display: flex;
+      background-color: #424949;
+      height: 10vh;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .navega{
+      justify-content: flex-end;
+    }
+  
+  @font-face {
+      font-family: encabezado;
+      src: url(Poiret_One/PoiretOne-Regular.ttf);
+  }
+  
+  header .enca{
+      white-space: nowrap;
+      align-items: center;
+      display: flex; 
+  background-color: black;
+  }
+  .logo,.nombre{
+      flex: 1;
+  }
+  
+  .nombre{
+      padding: 2px;
+      display: flex;
+      color: white;
+      font-family: encabezado;
+      font-weight: normal;
+      font-size: 3vw;
+       background-color: black;
+       font-weight:  bolder;
+  }
+  
+  /* imagenes poner aqui */
+  
+  
+  .logo{
+      height: 10vh;
+      max-height: 100%;
+  }
+  
+  .Cfoto{                   /* foto de la pagina motos */
+  
+    
+       height: 40vh;
+      max-height: 100%;
+      width: 100%;
+  }
+  
+  
+  
+  
+  nav{
+      white-space: nowrap;
+      align-items: center;
+      display: flex;
+      flex: 1;  
+     padding-right: 2%;
+  }
+  
+  .idioma{
+      padding: 3px;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 2vw;
+  }
+  .nav-link,.idioma{
+      color: white;
+      font-family: encabezado;
+  }
+  .nav-link{
+      padding-left: 11%;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight:  bolder;
+  }
+  
+  
+  
+  article {
+   
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 220px; /* Cambiamos height por min-height para que el contenido no se desborde en pantallas pequeñas */
+   
+    
+  }
+  
+  article h2 {
+    position: relative;
+   
+    font-family: encabezado;
+    font-size: 2.5vw; /* Usamos unidades relativas para el tamaño de fuente */
+  
+  }
+  
+  
+  
+  
+  
+aside {
+  padding-top:20px;
+    height: 100px;
+
+  
+  }
+ 
+ .Resumen{
+      position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+     font-size: 3vw;
+     padding-top:5px;
+ }
+  
+  aside p {
+ margin:10px;
+    font-size: 3vw; /* Usamos unidades relativas para el tamaño de fuente */
+   
+  }
+  
+  
+  
+  
+  footer {
+   
+    height: 201px;
+    background-color: #424949;
+   
+  
+  }
+  
+  .Clientes {
+  
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+     font-size: 3vw;
+     padding-top:5px;
+        
+}
+  
+  footer p {
+ 
+    position: relative;
+    align-self:flex-start;
+    font-family: encabezado;
+    font-size: 3vw; 
+    position: relative; 
+    top: 10px;
+        
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para dispositivos de pantalla mediana */
+
+@media screen and (min-width: 569px) and (max-width: 1200px) {
+  .nombre {
+      font-size: auto;
+  }
+
+  header{
+      display: flex;
+      background-color: #424949;
+      height: 10vh;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .navega{
+      justify-content: flex-end;
+    }
+  
+  @font-face {
+      font-family: encabezado;
+      src: url(Poiret_One/PoiretOne-Regular.ttf);
+  }
+  
+  header .enca{
+      white-space: nowrap;
+      align-items: center;
+      display: flex; 
+  background-color: black;
+  }
+  .logo,.nombre{
+      flex: 1;
+  }
+  
+  .nombre{
+      padding: 2px;
+      display: flex;
+      color: white;
+      font-family: encabezado;
+      font-weight: normal;
+      font-size: 3vw;
+       background-color: black;
+       font-weight:  bolder;
+  }
+  
+  /* imagenes poner aqui */
+  
+  
+  .logo{
+      height: 10vh;
+      max-height: 100%;
+  }
+  
+  .Cfoto{                   /* foto de la pagina motos */
+  
+    margin-bottom: 1%;
+       height: 35vh;
+      max-height: 100%;
+      width: 100%;
+  }
+  
+  
+  
+  
+  nav{
+      white-space: nowrap;
+      align-items: center;
+      display: flex;
+      flex: 1;  
+     padding-right: 2%;
+  }
+  
+  .idioma{
+      padding: 3px;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 1.5vw;
+     padding-left: 14px;
+  }
+  .nav-link,.idioma{
+      color: white;
+      font-family: encabezado;
+  }
+  .nav-link{
+      padding-left: 20%;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight:  bolder;
+  }
+  
+  
+  
+  article {
+   
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 220px; /* Cambiamos height por min-height para que el contenido no se desborde en pantallas pequeñas */
+   
+    
+  }
+  
+  article h2 {
+    position: relative;
+   
+    font-family: encabezado;
+    font-size: 2.5vw; /* Usamos unidades relativas para el tamaño de fuente */
+  
+  }
+  
+  
+  
+  
+  
+aside {
+  padding-top:50px;
+    height: 250px;
+   
+  
+  }
+ 
+ .Resumen{
+      position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+     font-size: 3vw;
+     padding-top:5px;
+ }
+  
+  aside p {
+ margin:10px;
+    font-size: 3vw; /* Usamos unidades relativas para el tamaño de fuente */
+   
+  }
+  
+  
+  
+  
+  footer {
+   
+    height: 201px;
+    background-color: #424949;
+   
+  
+  }
+  
+  .Clientes {
+  
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+     font-size: 3vw;
+     padding-top:5px;
+        
+}
+  
+  footer p {
+ 
+    position: relative;
+    align-self:flex-start;
+    font-family: encabezado;
+    font-size: 3vw; 
+    position: relative; 
+    top: 15px;
+        
+}
+
+
+
+
+      }
+
+
+
+
+
+      /* Estilos para dispositivos de pantalla grande computadora */
+
+@media screen and (min-width: 1201px) {
+  
+  .nombre {
+      font-size: auto;
+  }
+
+  header{
+      display: flex;
+      background-color: #424949;
+      height: 10vh;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .navega{
+      justify-content: flex-end;
+    }
+  
+  @font-face {
+      font-family: encabezado;
+      src: url(Poiret_One/PoiretOne-Regular.ttf);
+  }
+  
+  header .enca{
+      white-space: nowrap;
+      align-items: center;
+      display: flex; 
+  background-color: black;
+  }
+  .logo,.nombre{
+      flex: 1;
+  }
+  
+  .nombre{
+      padding: 2px;
+      display: flex;
+      color: white;
+      font-family: encabezado;
+      font-weight: normal;
+      font-size: 3vw;
+   
+       font-weight:  bolder;
+  }
+  
+  /* imagenes poner aqui */
+  
+  
+  .logo{
+      height: 10vh;
+      max-height: 100%;
+  }
+  
+  .Cfoto{                   /* foto de la pagina motos */
+  
+    margin-bottom: 1%;
+       height: 67vh;
+      max-height: 100%;
+     width: 100%;
+  }
+  
+  
+  
+  nav{
+      white-space: nowrap;
+      align-items: center;
+      display: flex;
+      flex: 1;  
+     padding-right: 1%;
+  }
+  
+  .idioma{
+      padding: 40px;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 1vw;
+  }
+  .nav-link,.idioma{
+      color: white;
+      font-family: encabezado;
+  }
+  .nav-link{
+      padding-left: 20%;
+      text-decoration: none;
+      font-size: 40px;
+      font-weight:  bolder;
+  }
+  
+  
+  
+  article {
+   
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 650px; /* Cambiamos height por min-height para que el contenido no se desborde en pantallas pequeñas */
+   
+    
+  }
+  
+  article h2 {
+    position: relative;
+   
+    font-family: encabezado;
+    font-size: 2.5vw; /* Usamos unidades relativas para el tamaño de fuente */
+  
+  }
+  
+  
+  
+  
+aside {
+  padding-top:30px;
+    height: 450px;
+   
+  
+  }
+ 
+ .Resumen{
+      position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+     font-size: 3vw;
+     padding-top:20px;
+ }
+  
+  aside p {
+ margin:40px;
+    font-size: 3vw; /* Usamos unidades relativas para el tamaño de fuente */
+   
+  }
+  
+  
+  footer {
+   
+    height: 201px;
+    background-color: #424949;
+   
+  
+  }
+  
+  .Clientes {
+  
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+     font-size: 4vw;
+     padding-top:15px;
+        
+}
+  
+  footer p {
+ 
+    position: relative;
+    align-self:flex-start;
+    font-family: encabezado;
+    font-size: 3vw; 
+    position: relative; 
+    top: 30px;
+        
+}
+}

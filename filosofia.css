@@ -1,628 +1,464 @@
-/* Estilos generales */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-   
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    height:auto;
+     width: auto;
 }
 
-/* Estilos para dispositivos de pantalla pequeña */
+html {
+  font-family: "Libre Baskerville", "sans-serif";
+}
 
-@media screen and (max-width: 768px) {
+/* telefono*/
+@media screen and (min-width: 200px)
+{
+header{
+   display: flex;
+      background-color: black;
+      height: 6vh;
+    
+}
 
-    .nombre {
-        font-size: 4vw;
-    }
+.navega {
+  display: flex;
+  margin:0px 0px 0px 0px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:0px;
+  list-style: none;
 
-    header{
-        display: flex;
-        background-color: black;
-        height: 15vh;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-    
-    .navega{
-        justify-content: flex-end;
-      }
-    
-    @font-face {
-        font-family: encabezado;
-        src: url(Poiret_One/PoiretOne-Regular.ttf);
-    }
-    
-    header .enca{
-        white-space: nowrap;
-        align-items: center;
-        display: flex; 
-    }
-    .logo,.nombre{
-        flex: 1;
-    }
-    .nombre{
-        padding: 10px;
-        display: flex;
-        color: white;
-        font-family: encabezado;
-        font-weight: normal;
-        font-size: 2.5vw;
-    }
-    .logo{
-        height: 10vh;
-        max-height: 100%;
-    }
-    nav{
-        white-space: nowrap;
-        align-items: center;
-        display: flex;
-        flex: 1;   
-    }
-    
-    .idioma{
-        padding: 15px;
-        text-decoration: none;
-        font-weight: normal;
-        font-size: 1.5vw;
-    }
-    .nav-link,.idioma{
-        color: white;
-        font-family: encabezado;
-    }
-    .nav-link{
-        padding-left: 5%;
-        text-decoration: none;
-        font-size: 2.5vw;
-    }
-    
-    .conte{
-        display: flex;
-        padding: 1%;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .conte:hover{
-    background-color: black;
-    color: white;
-    
-    }
-     
-    .conte1{
-        padding: 1%;
-        display: flex;
-        flex: 1;
-        height: 35vh;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-    }
-    
-    .contea{
-        display: none;
-        flex: 1;
-        height: 30vh;
-        margin: 1%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .conteb{    
-        flex: 1;
-        height: 30vh;
-        margin: 1%;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
+}
 
-    .conte2a{
-        display: none;
-        font-size: 2vh;
-    }
+.navega li {
 
-    .conte:hover .conteb{
-     display: none;  
-    }
-
-    .conte:hover .contea{
-        display: flex;   
-        justify-content: center ;
-        align-items: center ;
-    }
-
-    .conte:hover .conte1{
-        display: block;   
-        justify-content: center ;
-        align-items: center ;
-        position: relative;
-    }
-
-    .conte:hover .conte2a{
-        display: block;   
-        justify-content: center ;
-        align-items: center ;
-    }
-      
-    .conteb h2{
-    font-family: encabezado;
-    }
-    
-    .conte2{
-        display: flex;
-        flex: 1;
-        height: 35vh;
-        align-items: center;   
-    }
-    
-    .conteaim{
-        height: 17vh;
-        border-radius: 10%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .conte2 p{
-        font-family: encabezado;
-        font-weight: bold;
-        text-align: center;
-    }
-    
-    .conte2a{
-       margin: 5%;
-        
-    }
-
-    .contu{
-    
-        padding: 1%;
-        display: flex; 
-    }
-    
-    .contu:hover{
-        background-color: black;
-        color: white;
-    }
-    
-    .contua{
-        display: flex;
-        flex: 1;
-        position: absolute;
-        height: 35vh;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .contuo{
-        display: flex;
-        flex: 1;      
-        height: 35vh;
-        align-items: center;
-        padding: 1%;
-    }
-    
-    .contuo1{
-        display: flex; 
-        height: 30vh;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-        margin: 1%;
-    }
-    
-    .contuo2{
-        justify-content: center;
-        display: flex;
-        height: 30vh;
-        flex: 1;
-        margin: 1%;
-    }
-    
-    .contuo1 h2{
-        font-family: encabezado;
-    }
-    
-    .contuo2img{
-        height: 14vh;
-        border-radius: 10%;  
-    }
-    
-    .contua p{
-        font-family: encabezado;
-        font-weight: bold;
-        text-align: center;
-        font-size: 2vh;
-    }
-    
-    .contua2{
-        margin: 5%;
-        display: none;
-    }
-    
-     .contuo2{
-        display: none;
-    }
-
-    .contu:hover .contuo1{
-        display: none;   
-    }
-
-    .contu:hover .contuo2{
-        display: flex;
-        justify-content: center;
-        align-items: center;   
-    }
-
-    .contu:hover .contua2{
-        display: block;   
-    }
-
-    .contu:hover .contua{
-        display: flex; 
-        position: relative;
-        justify-content: center;
-        align-items: center; 
-    }
-
-    .conti{
-        display: flex;
-        padding: 1%;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .conti:hover{
-    background-color: black;
-    color: white;
-    
-    }
-     
-    .conti1{
-        padding: 1%;
-        display: flex;
-        flex: 1;
-        height: 35vh;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-    }
-    
-    .contia{
-        display: none;
-        flex: 1;
-        height: 30vh;
-        margin: 1%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .contib{    
-        flex: 1;
-        height: 30vh;
-        margin: 1%;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .conti2a{
-        display: none;
-        font-size: 2vh;
-    }
-
-    .conti:hover .contib{
-     display: none;  
-    }
-
-    .conti:hover .contia{
-        display: flex;   
-        justify-content: center ;
-        align-items: center ;
-    }
-
-    .conti:hover .conti1{
-        display: block;   
-        justify-content: center ;
-        align-items: center ;
-        position: relative;
-    }
-
-    .conti:hover .conti2a{
-        display: block;   
-        justify-content: center ;
-        align-items: center ;
-    }
-      
-    .contib h2{
-    font-family: encabezado;
-    }
-    
-    .conti2{
-        display: flex;
-        flex: 1;
-        height: 35vh;
-        align-items: center;   
-    }
-    
-    .contiaim{
-        height: 17vh;
-        border-radius: 10%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .conti2 p{
-        font-family: encabezado;
-        font-weight: bold;
-        text-align: center;
-    }
-    
-    .conti2a{
-       margin: 5%;
-    }
-
-    .container {
-        display: flex;
-        overflow: hidden;
-        height: 20vh;
-      }
-      
-      .box {
-        flex: 0 0 100%;
-        height: 20vh;
-        background-color:white;
-        transition: transform 0.3s ease;
-        display: none;
-      }
-      
-      .visible {
-        display: block;
-      }
-      
-      .conto {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-      }
-      
-      .conto1,
-      .conto2,
-      .conto3,
-      .conto4 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
-      
-      .circles {
-        display: flex;
-        justify-content: center;
-        
-      }
-
-      .circle {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: white;
-        margin: 5px;
-      }
-      
-      .circle.active {
-        background-color: black;
-      }
-      
-    .conto{
-        display:list-item;
-        height: 20vh;
-    }
-    
-    .conto1{
-        flex: 1;
-        height: 20vh;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: encabezado;
-    }
-    
-    .conto2{
-        flex: 1;
-        height: 20vh;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: encabezado;
-        
-    }
-    
-    .conto3{
-        flex: 1;
-        height: 20vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: encabezado;
-       
-    }
-    
-    .conto4{
-        flex: 1;
-        height: 20vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: encabezado;
-       
-    }
-    
-    .title{
-        display: flex;
-        height: 15vh;
-        justify-content: center;
-        align-items: center;
-        font-family: encabezado;
-    }
-    
-    .title:hover{
-        background-color: black;
-        color: white;
-    }
-    
-    /* .conto1:hover{
-        background-color: black;
-        color: white;
-    }
-    
-    .conto2:hover{
-        background-color: black;
-        color: white;
-    }
-    
-    .conto3:hover{
-        background-color: black;
-        color: white;
-    }
-    
-    .conto4:hover{
-        background-color: black;
-        color: white;
-    } */
-
-    /* footer{
-        height: 15vh;
-        background-color: black;
-    }
-     */
-     }
-    
-     
-
-/* Estilos para dispositivos de pantalla mediana */
-
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-    .conte {
-
-        background-color: aqua;
-
+  width: auto;
+  padding: 7px;
+  font-weight:  bolder;
+ 
         }
-
-        }
-
-
-
-
-
-
-
-        /* Estilos para dispositivos de pantalla grande */
-
- @media screen and (min-width: 1201px) {
-    
-   .nombre {
-      font-size: auto;
-  }
-
-  header{
-      display: flex;
-      background-color: #424949;
-      height: 10vh;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  .navega{
-      justify-content: flex-end;
-    }
-  
-  @font-face {
-      font-family: encabezado;
-      src: url(Poiret_One/PoiretOne-Regular.ttf);
-  }
-  
-  header .enca{
-      white-space: nowrap;
-      align-items: center;
-      display: flex; 
-  background-color: black;
-  }
-  .logo,.nombre{
-      flex: 1;
-  }
-  
-  .nombre{
-      padding: 2px;
-      display: flex;
-      color: white;
-      font-family: encabezado;
-      font-weight: normal;
-      font-size: 3vw;
-   
-       font-weight:  bolder;
-  }
-  
-  /* imagenes poner aqui */
-  
-  
-  .logo{
-      height: 10vh;
-      max-height: 100%;
-  }
-  
-  
-  
-  
-  nav{
-      white-space: nowrap;
-      align-items: center;
-      display: flex;
-      flex: 1;  
-     padding-right: 1%;
-  }
-  
-  .idioma{
-      padding: 40px;
-      text-decoration: none;
-      font-weight: normal;
-      font-size: 1vw;
-  }
-  .nav-link,.idioma{
-      color: white;
-      font-family: encabezado;
-  }
-  .nav-link{
-      padding-left: 20%;
-      text-decoration: none;
-      font-size: 40px;
-      font-weight:  bolder;
-  }
-  
-#nav-link1 {
+        
+ li a{
+      background-color:black;
+    font-size: 1vh;
+    color: white;
     text-decoration: none;
-    font-size: 2.5vw;
-    font-family: encabezado;
-    color: black;
-    background-color: white;
-    height: 10vh;
-  padding-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
+        transition: background-color 1.5s;
+  }
+  
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
 }
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
   
-  
-  #nav-link2 {
-display: flex;
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 1vh;
+       font-weight:  bolder;
+       
+    padding:10px;
+}
+
+.idioma{
+    color:white;
+     font-size: 0.5vh;
+}
+
+.conte{
+    display: flex;
+    padding: 1%;
+    
+}
+.conte:hover{
+background-color: black;
+color: white;
+
+}
+
+.conte1{
+    padding: 1%;
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+}
+
+.contea{
+    display: flex;
+    flex: 1;
+    height: 30vh;
+     align-items: center;
+    margin: 1%;
+    justify-content: center;
+}
+
+.conteb{
+    flex: 1;
+
+    margin: 1%;
+    display:flex;
     align-items: center;
     justify-content: center;
-    padding-right: 20%;
+}
+
+.conteb h2{
+    font-family: encabezado;
+   font-size:100%;
+}
+
+.conte2{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    
+    align-items: center;   
+}
+
+.conte2a{
+    font-size:50%;
+}
+.contua2{
+     font-size:50%;
+}
+.conti2a{
+     font-size:50%;
+}
+.conteaim{
+    height: 50%;
+    border-radius: 10%;
+}
+
+.conte2 p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conte2a{
+   margin: 5%;
+    
+}
+
+.contu{
+    
+    padding: 1%;
+    display: flex; 
+}
+
+.contu:hover{
+    background-color: black;
+    color: white;
+}
+
+.contua{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contuo{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+    padding: 1%;
+}
+
+.contuo1{
+    display: flex;
+    height: 30vh;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    
+}
+
+.contuo2{
+    justify-content: center;
+    display: flex;
+    height: 30vh;
+    flex: 1;
+    margin: 1%;
+     align-items: center;
+}
+
+.contuo1 h2{
+    font-family: encabezado;
+    font-size:100%;
+}
+
+.contuo2img{
+    
+    height: 50%;
+    border-radius: 10%;  
+}
+
+.contua p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contua2{
+    margin: 5%;
+}
+
+.conti{
+    display: flex;
+    padding: 1%;
+    
+}
+.conti:hover{
+background-color: black;
+color: white;
+
+}
+
+.conti1{
+    padding: 1%;
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+}
+
+.contia{
+    display: flex;
+    flex: 1;
+    height: 30vh;
+    align-items: center;
+    margin: 1%;
+    justify-content: center;
+}
+
+.contib{
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contib h2{
+    font-family: encabezado;
+    font-size:100%;
+}
+
+.conti2{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    
+    align-items: center;   
+}
+
+.contiaim{
+    height: 50%;
+    border-radius: 10%;
+}
+
+.conti2 p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conti2a{
+   margin: 5%;
+}
+
+.conto{
+    display: flex;
+    height: 20vh;
+}
+
+.conto1{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+}
+
+ .conto2{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
 } 
+
+.conto3{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+   
+}
+
+.conto4{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+   
+}
+
+.title{
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+}
+
+.title:hover{
+    background-color: black;
+    color: white;
+}
+
+.conto1:hover{
+    background-color: black;
+    color: white;
+}
+
+
+ .conto2:hover{
+    background-color: black;
+    color: white;
+} 
+
+.conto3:hover{
+    background-color: black;
+    color: white;
+}
+
+.conto4:hover{
+    background-color: black;
+    color: white;
+}
+
+ footer{
+     background:#424949;
+ 
+    }
+    footer a{
+       position: relative; 
+       left: 65%;
+         font-size: 1.5vw;
+        font-weight:  bolder;
+        padding: 30px;
+    }
+    
+.conta{
+     position: relative; 
+       left: 5%;
+        padding: 30px;
+    }
+
+
+
+}
+
+
+/*tablet*/
+@media screen and (min-width: 568px) {
+   
+header{
+   display: flex;
+      background-color: black;
+      height: 10vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:20px 0px 0px 40px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:10px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 30px;
+  padding: 10px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 1.5vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
+  }
+  
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
+  
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 2vh;
+       font-weight:  bolder;
+       
+    padding:24px;
+}
+
+.idioma{
+    color:white;
+
+}
+
 
 .conte{
     display: flex;
@@ -895,15 +731,1131 @@ color: white;
     color: white;
 }
 
-  footer{
-    height: 15vh;
+ footer{
+     background:#424949;
+ 
+    }
+    footer a{
+       position: relative; 
+       left: 65%;
+         font-size: 1.5vw;
+        font-weight:  bolder;
+        padding: 30px;
+    }
+    
+.conta{
+     position: relative; 
+       left: 5%;
+        padding: 30px;
+    }
+
+
+
+
+}
+
+
+
+/*pc*/
+@media screen and (min-width: 900px) {
+   
+header{
+   display: flex;
+      background-color: black;
+      height: 10vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:0px 0px 0px 80px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:0px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 350px;
+  padding: 20px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 4vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
+  }
+  
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
+  
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 2vw;
+       font-weight:  bolder;
+       padding:1vw;
+    
+}
+
+.idioma{
+    color:white;
+        font-size: 1vh;
+}
+
+
+.conte{
+    display: flex;
+    padding: 1%;
+    
+}
+.conte:hover{
+background-color: black;
+color: white;
+
+}
+
+.conte1{
+    padding: 1%;
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+}
+
+.contea{
+    display: flex;
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    justify-content: center;
+}
+
+.conteb{
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteb h2{
+    font-family: encabezado;
+}
+
+.conte2{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    
+    align-items: center;   
+}
+
+.conteaim{
+    height: 30vh;
+    border-radius: 10%;
+}
+
+.conte2 p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conte2a{
+   margin: 5%;
+    
+}
+
+.contu{
+    
+    padding: 1%;
+    display: flex; 
+}
+
+.contu:hover{
     background-color: black;
- } 
+    color: white;
+}
 
+.contua{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+}
 
- }
+.contuo{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+    padding: 1%;
+}
 
- /* footer{
+.contuo1{
+    display: flex;
+    height: 30vh;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.contuo2{
+    justify-content: center;
+    display: flex;
+    height: 30vh;
+    flex: 1;
+    margin: 1%;
+}
+
+.contuo1 h2{
+    font-family: encabezado;
+}
+
+.contuo2img{
+    height: 30vh;
+    border-radius: 10%;  
+}
+
+.contua p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contua2{
+    margin: 5%;
+}
+
+.conti{
+    display: flex;
+    padding: 1%;
+    
+}
+.conti:hover{
+background-color: black;
+color: white;
+
+}
+
+.conti1{
+    padding: 1%;
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+}
+
+.contia{
+    display: flex;
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    justify-content: center;
+}
+
+.contib{
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contib h2{
+    font-family: encabezado;
+}
+
+.conti2{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    
+    align-items: center;   
+}
+
+.contiaim{
+    height: 30vh;
+    border-radius: 10%;
+}
+
+.conti2 p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conti2a{
+   margin: 5%;
+}
+
+.conto{
+    display: flex;
+    height: 20vh;
+}
+
+.conto1{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+}
+
+ .conto2{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+} 
+
+.conto3{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+   
+}
+
+.conto4{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+   
+}
+
+.title{
+    display: flex;
     height: 15vh;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+}
+
+.title:hover{
     background-color: black;
- } */
+    color: white;
+}
+
+.conto1:hover{
+    background-color: black;
+    color: white;
+}
+
+
+ .conto2:hover{
+    background-color: black;
+    color: white;
+} 
+
+.conto3:hover{
+    background-color: black;
+    color: white;
+}
+
+.conto4:hover{
+    background-color: black;
+    color: white;
+}
+
+ footer{
+     background:#424949;
+ 
+    }
+    footer a{
+       position: relative; 
+       left: 65%;
+         font-size: 1.5vw;
+        font-weight:  bolder;
+        padding: 30px;
+    }
+    
+.conta{
+     position: relative; 
+       left: 5%;
+        padding: 30px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px) 
+{
+    
+header{
+   display: flex;
+      background-color: black;
+      height: 10vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:0px 0px 0px 80px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:0px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 350px;
+  padding: 20px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 5vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
+  }
+  
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
+  
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 2vw;
+       font-weight:  bolder;
+       padding:1vw;
+    
+}
+
+.idioma{
+    color:white;
+}
+
+.conte{
+    display: flex;
+    padding: 1%;
+    
+}
+.conte:hover{
+background-color: black;
+color: white;
+
+}
+
+.conte1{
+    padding: 1%;
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+}
+
+.contea{
+    display: flex;
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    justify-content: center;
+}
+
+.conteb{
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteb h2{
+    font-family: encabezado;
+    font-size:150%;
+}
+
+.conte2{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    
+    align-items: center;   
+}
+
+.conte2a{
+    font-size:100%;
+}
+.contua2{
+     font-size:100%;
+}
+.conti2a{
+     font-size:100%;
+}
+.conteaim{
+    height: 30vh;
+    border-radius: 10%;
+}
+
+.conte2 p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conte2a{
+   margin: 5%;
+    
+}
+
+.contu{
+    
+    padding: 1%;
+    display: flex; 
+}
+
+.contu:hover{
+    background-color: black;
+    color: white;
+}
+
+.contua{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contuo{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+    padding: 1%;
+}
+
+.contuo1{
+    display: flex;
+    height: 30vh;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.contuo2{
+    justify-content: center;
+    display: flex;
+    height: 30vh;
+    flex: 1;
+    margin: 1%;
+}
+
+.contuo1 h2{
+    font-family: encabezado;
+    font-size:150%;
+}
+
+.contuo2img{
+    height: 30vh;
+    border-radius: 10%;  
+}
+
+.contua p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contua2{
+    margin: 5%;
+}
+
+.conti{
+    display: flex;
+    padding: 1%;
+    
+}
+.conti:hover{
+background-color: black;
+color: white;
+
+}
+
+.conti1{
+    padding: 1%;
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+}
+
+.contia{
+    display: flex;
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    justify-content: center;
+}
+
+.contib{
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contib h2{
+    font-family: encabezado;
+    font-size:150%;
+}
+
+.conti2{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    
+    align-items: center;   
+}
+
+.contiaim{
+    height: 30vh;
+    border-radius: 10%;
+}
+
+.conti2 p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conti2a{
+   margin: 5%;
+}
+
+.conto{
+    display: flex;
+    height: 20vh;
+}
+
+.conto1{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+}
+
+ .conto2{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+} 
+
+.conto3{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+   
+}
+
+.conto4{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+   
+}
+
+.title{
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+}
+
+.title:hover{
+    background-color: black;
+    color: white;
+}
+
+.conto1:hover{
+    background-color: black;
+    color: white;
+}
+
+
+ .conto2:hover{
+    background-color: black;
+    color: white;
+} 
+
+.conto3:hover{
+    background-color: black;
+    color: white;
+}
+
+.conto4:hover{
+    background-color: black;
+    color: white;
+}
+
+ footer{
+     background:#424949;
+ 
+    }
+    footer a{
+       position: relative; 
+       left: 65%;
+         font-size: 1.5vw;
+        font-weight:  bolder;
+        padding: 30px;
+    }
+    
+.conta{
+     position: relative; 
+       left: 5%;
+        padding: 30px;
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width: 1450px) 
+{
+    header{
+   display: flex;
+      background-color: black;
+      height: 10vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:0px 0px 0px 120px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:10px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 350px;
+  padding: 20px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 5vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
+  }
+  
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
+  
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 2vw;
+       font-weight:  bolder;
+       padding:1vw;
+    
+}
+
+.idioma{
+    color:white;
+}
+
+.conte{
+    display: flex;
+    padding: 1%;
+    
+}
+.conte:hover{
+background-color: black;
+color: white;
+
+}
+
+.conte1{
+    padding: 1%;
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+}
+
+.contea{
+    display: flex;
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    justify-content: center;
+}
+
+.conteb{
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteb h2{
+    font-family: encabezado;
+}
+
+.conte2{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    
+    align-items: center;   
+}
+
+.conteaim{
+    height: 30vh;
+    border-radius: 10%;
+}
+
+.conte2 p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conte2a{
+   margin: 5%;
+    
+}
+
+.contu{
+    
+    padding: 1%;
+    display: flex; 
+}
+
+.contu:hover{
+    background-color: black;
+    color: white;
+}
+
+.contua{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contuo{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+    padding: 1%;
+}
+
+.contuo1{
+    display: flex;
+    height: 30vh;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.contuo2{
+    justify-content: center;
+    display: flex;
+    height: 30vh;
+    flex: 1;
+    margin: 1%;
+}
+
+.contuo1 h2{
+    font-family: encabezado;
+}
+
+.contuo2img{
+    height: 30vh;
+    border-radius: 10%;  
+}
+
+.contua p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contua2{
+    margin: 5%;
+}
+
+.conti{
+    display: flex;
+    padding: 1%;
+    
+}
+.conti:hover{
+background-color: black;
+color: white;
+
+}
+
+.conti1{
+    padding: 1%;
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    align-items: center;
+}
+
+.contia{
+    display: flex;
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    justify-content: center;
+}
+
+.contib{
+    flex: 1;
+    height: 30vh;
+    
+    margin: 1%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contib h2{
+    font-family: encabezado;
+}
+
+.conti2{
+    display: flex;
+    flex: 1;
+    height: 35vh;
+    
+    align-items: center;   
+}
+
+.contiaim{
+    height: 30vh;
+    border-radius: 10%;
+}
+
+.conti2 p{
+    font-family: encabezado;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conti2a{
+   margin: 5%;
+}
+
+.conto{
+    display: flex;
+    height: 20vh;
+}
+
+.conto1{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+}
+
+ .conto2{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+} 
+
+.conto3{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+   
+}
+
+.conto4{
+    flex: 1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+   
+}
+
+.title{
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    font-family: encabezado;
+}
+
+.title:hover{
+    background-color: black;
+    color: white;
+}
+
+.conto1:hover{
+    background-color: black;
+    color: white;
+}
+
+
+ .conto2:hover{
+    background-color: black;
+    color: white;
+} 
+
+.conto3:hover{
+    background-color: black;
+    color: white;
+}
+
+.conto4:hover{
+    background-color: black;
+    color: white;
+}
+
+ footer{
+     background:#424949;
+ 
+    }
+    footer a{
+       position: relative; 
+       left: 65%;
+         font-size: 1.5vw;
+        font-weight:  bolder;
+        padding: 30px;
+    }
+    
+.conta{
+     position: relative; 
+       left: 5%;
+        padding: 30px;
+    }
+
+
+
+}

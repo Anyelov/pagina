@@ -1,376 +1,998 @@
-/* Estilos generales */
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    height:auto;
+     width: auto;
 }
 
-/* Estilos para dispositivos de pantalla pequeña */
+html {
+  font-family: "Libre Baskerville", "sans-serif";
+}
 
- @media screen and (max-width: 768px) {
-
-    .nombre {
-        font-size: 4vw;
-    }
-
-    header{
-        display: flex;
-        background-color: black;
-        height: 15vh;
-        justify-content: space-between;
-        align-items: center;
-    }
+/* telefono*/
+@media screen and (min-width: 200px)
+{
+header{
+   display: flex;
+      background-color: black;
+      height: 6vh;
     
-    .navega{
-        justify-content: flex-end;
-      }
-    
-    @font-face {
-        font-family: encabezado;
-        src: url(Poiret_One/PoiretOne-Regular.ttf);
-    }
-    
-    header .enca{
-        white-space: nowrap;
-        align-items: center;
-        display: flex; 
-    }
-    .logo,.nombre{
-        flex: 1;
-    }
-    .nombre{
-        padding: 10px;
-        display: flex;
-        color: white;
-        font-family: encabezado;
-        font-weight: normal;
-        font-size: 2.5vw;
-    }
-    .logo{
-        height: 10vh;
-        max-height: 100%;
-    }
-    nav{
-        white-space: nowrap;
-        align-items: center;
-        display: flex;
-        flex: 1;   
-    }
-    
-    .idioma{
-        padding: 15px;
-        text-decoration: none;
-        font-weight: normal;
-        font-size: 1.5vw;
-    }
-    .nav-link,.idioma{
-        color: white;
-        font-family: encabezado;
-    }
-    .nav-link{
-        padding-left: 5%;
-        text-decoration: none;
-        font-size: 2.5vw;
-    }
+}
 
-    .concat{
-        display: flex;
-        width: 26vw;
-        height: 17vh;
-        border-radius: 50%;
-        object-fit: cover;
-        mask-image: radial-gradient(ellipse farthest-corner at 50% 0%, transparent 50%, black 51%); 
-        margin: 2%;
-        margin-left: 38%;
-    }
-    
-    .mes,
-    .indica{
-        font-size: 5vw;
-        font-family: encabezado;
-        margin: 5%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-     }
+.navega {
+  display: flex;
+  margin:0px 0px 0px 0px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:0px;
+  list-style: none;
 
-     .receptor{
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-     }
+}
 
-     .receptor input,.receptor textarea{
-        display: block;
-        flex: 1;
-        margin: 3%;
-        width: 45vw;
-        font-family: encabezado;
-        text-align: center;
-    }  
-    .env{
-        background-color:black;
-        color: white;
-    }
+.navega li {
 
-    .titre{
-        font-size: 6vw;
-        font-family: encabezado;
-        margin: 5%;
-        margin-left: 4vw;
-        display: flex;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+  width: auto;
+  padding: 7px;
+  font-weight:  bolder;
+ 
         }
-        .emisor{
-            display: flex;
-            flex: 1;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width: 100%;
-            font-family: encabezado; 
-            padding: 5%; 
-        }
-        .pie{    
-            display: flex;
-            height: 12vh;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-        } 
-} 
-
-/* Estilos para dispositivos de pantalla mediana */
-
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-    .conteiner {
-
-        background-color: aqua;
-
-        }
-
-        }
-
-
-/* Estilos para dispositivos de pantalla grande */
-
- @media screen and (min-width: 1201px) {
-    
-   .nombre {
-      font-size: auto;
-  }
-
-  header{
-      display: flex;
-      background-color: #424949;
-      height: 10vh;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  .navega{
-      justify-content: flex-end;
-    }
-  
-  @font-face {
-      font-family: encabezado;
-      src: url(Poiret_One/PoiretOne-Regular.ttf);
-  }
-  
-  header .enca{
-      white-space: nowrap;
-      align-items: center;
-      display: flex; 
-  background-color: black;
-  }
-  .logo,.nombre{
-      flex: 1;
-  }
-  
-  .nombre{
-      padding: 2px;
-      display: flex;
-      color: white;
-      font-family: encabezado;
-      font-weight: normal;
-      font-size: 3vw;
-   
-       font-weight:  bolder;
-  }
-  
-  /* imagenes poner aqui */
-  
-  
-  .logo{
-      height: 10vh;
-      max-height: 100%;
-  }
-  
-  
-  
-  
-  nav{
-      white-space: nowrap;
-      align-items: center;
-      display: flex;
-      flex: 1;  
-     padding-right: 1%;
-  }
-  
-  .idioma{
-      padding: 40px;
-      text-decoration: none;
-      font-weight: normal;
-      font-size: 1vw;
-  }
-  .nav-link,.idioma{
-      color: white;
-      font-family: encabezado;
-  }
-  .nav-link{
-      padding-left: 20%;
-      text-decoration: none;
-      font-size: 40px;
-      font-weight:  bolder;
-  }
-  
-#nav-link1 {
+        
+ li a{
+      background-color:black;
+    font-size: 1vh;
+    color: white;
     text-decoration: none;
-    font-size: 2.5vw;
-    font-family: encabezado;
-    color: black;
-    background-color: white;
-    height: 10vh;
-  padding-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
+        transition: background-color 1.5s;
+  }
+  
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
 }
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
   
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 1vh;
+       font-weight:  bolder;
+       
+    padding:10px;
+}
+
+.idioma{
+    color:white;
+     font-size: 0.5vh;
+}
+
+.concat{
+    max-width: 45%; height: auto;
+    border-radius: 40%;
+    opacity:0.9;
+    padding:5%;
+    transform: scaleX(-1);
+    
+}
+
+.concat2{
+ max-width: 20%; 
+ height: auto; 
+padding:0% 0% 20% 10%;
+}
+
+.indica{
+    font-size: 350%;
+   padding:5%;
+    text-align:center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: black;
+     
+}
+.indica2{
+     text-align:center;
+      font-size: 100%;
+}
+
+.conteiner{
+    height:auto;
+     width: auto;
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:5%;
+    
+}
+
+.formulario {
+  background-color: white;
+  width: 400px;
+  border-radius: 12px;
+  padding: 20px 40px;
+  box-shadow: 10px 10px 30px rgba(93, 99, 105, .2);
+  margin-bottom:5%;
+  justify-content: center;
+}
+
+input{
+	background-color: #fbfbfb; 
+	width: 85%; 
+	height: 4%; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1%; 
+	border-color: black; 
+    padding:2%;
+   
+ 
+}
+.nom:hover{
+   
+     animation:anima 2s infinite;
+}
+
+
+input.env{
+    width:30%;
+    margin-left:35%;
+    background:black;
+   color:white;
+   border-color:black;
+   border:solid;
+}
+.conteiner p{
+   
+    padding-top:7%;
+}
+textarea{
+ 
+	width: 89%; 
+	height: 15%; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 2px; 
+	border-color: black; 
+	
   
-  #nav-link2 {
-display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 20%;
-} 
-
-
-
-    .concat{
-        display: flex;
-        width: 13vw;
-        height: 35vh;
-        border-radius: 50%;
-        object-fit: cover;
-        /* mask-image: radial-gradient(ellipse farthest-corner at 50% 0%, transparent 50%, black 51%); */
-        margin: 10%;
-    }
-
-
-    .pie {
-        background-color: black;
-        height: 10vh;
-    }
-    .diseño{
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;            
-    }
-
-    .global{
-        
-        flex: 1;
-        display: flex;
-    }
-
-    .conteiner{
-        
-        display: flex;
-        height: 80vh;
-    }
-
-    .emisor{
-        display: flex;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        font-family: encabezado;
-    }
+ 
+}
+label{
+    font-size:170%;
     
-    
-    .global{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        max-width: 100vh;
-        justify-content: center;
-        align-items: center;
-    }
+}
 
-    .titre{
-        font-size: 2vw;
-        font-family: encabezado;
-        margin: 5%;
-        margin-left: 4vw;
+body{
+background:#EBF5FB;
+
+	
+}
+.env:hover {
+    border-width: 10px;
+  animation:anima2 4s infinite;
+}
+
+
+}
+
+
+/*tablet*/
+@media screen and (min-width: 568px) {
+   
+header{
+   display: flex;
+      background-color: black;
+      height: 10vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:20px 0px 0px 40px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:10px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 30px;
+  padding: 10px;
+  font-weight:  bolder;
+ 
         }
+        
+ li a{
+      background-color:black;
+    font-size: 1.5vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
+  }
+  
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
 
 
-     .mes,
-     .indica{
-        font-size: 1.5vw;
-        font-family: encabezado;
-        margin: 5%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-     }  
-    
-     .receptor input,.receptor textarea{
-        display: block;
-        flex: 1;
-        margin: 3%;
-        width: 25vw;
-        font-family: encabezado;
-        text-align: center;
-    }
+.logo{
+
+ max-width: auto;
+ height: 100%;
+  
+}
+
+header .nombre{
      
-     .receptor{
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 2vh;
+       font-weight:  bolder;
+       
+    padding:24px;
+}
+
+.idioma{
+    color:white;
+
+}
+
+
+.flex{
+   display:flex;
+}
+.concat{
+    max-width: 45%; height: auto;
+    border-radius: 40%;
+    opacity:0.9;
+    padding:5%;
+    transform: scaleX(-1);
+    
+}
+
+.concat2{
+ max-width: 20%; 
+ height: auto; 
+padding:0% 0% 20% 10%;
+}
+
+.diseño{
+   margin:10px;
+      height:100%;
+     width: 40%;
+}
+
+
+.indica{
+    font-size: 350%;
+   padding:5%;
+    text-align:center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: black;
      
-    .com{
-        height: 15vh;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        width: 25vw;
-        font-family: encabezado;
-        margin: 3%;
-        margin-left: 10px;
-    }
-    .env{
-        background-color:black;
-        color: white;
-    }
+}
+.indica2,ul{
+     text-align:center;
+      font-size: 200%;
+}
 
+.conteiner{
+    height:auto;
+     width: 60%;
+     display: flex;
+  justify-content: center;
+  align-items: center;
     
-    
+}
 
- }
+.formulario {
+  background-color: white;
+  width: 400px;
+  border-radius: 12px;
+  padding: 20px 40px;
+  box-shadow: 10px 10px 30px rgba(93, 99, 105, .2);
+  margin-bottom:5%;
+  justify-content: center;
+}
+
+input{
+	background-color: #fbfbfb; 
+	width: 85%; 
+	height: 4%; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1%; 
+	border-color: black; 
+    padding:2%;
+   
+ 
+}
+.nom:hover{
+   
+     animation:anima 2s infinite;
+}
+
+
+input.env{
+    width:30%;
+    margin-left:35%;
+    background:black;
+   color:white;
+   border-color:black;
+   border:solid;
+}
+.conteiner p{
+   
+    padding-top:7%;
+}
+textarea{
+ 
+	width: 89%; 
+	height: 15%; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 2px; 
+	border-color: black; 
+	
+  
+ 
+}
+label{
+    font-size:170%;
+    
+}
+
+body{
+background:#EBF5FB;
+
+	
+}
+.env:hover {
+    border-width: 10px;
+  animation:anima2 4s infinite;
+}
+
+
+}
+
+
+
+/*pc*/
+@media screen and (min-width: 900px) {
+   
+header{
+   display: flex;
+      background-color: black;
+      height: 10vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:0px 0px 0px 80px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:0px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 350px;
+  padding: 20px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 4vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
+  }
+  
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
+  
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 2vw;
+       font-weight:  bolder;
+       padding:1vw;
+    
+}
+
+.idioma{
+    color:white;
+        font-size: 1vh;
+}
+
+
+.flex{
+   display:flex;
+}
+.concat{
+    max-width: 45%; height: auto;
+    border-radius: 40%;
+    opacity:0.9;
+    padding:5%;
+    transform: scaleX(-1);
+    
+}
+
+.concat2{
+ max-width: 20%; 
+ height: auto; 
+padding:0% 0% 20% 10%;
+}
+
+.diseño{
+   margin:10px;
+      height:100%;
+     width: 40%;
+}
+
+
+.indica{
+    font-size: 350%;
+   padding:5%;
+    text-align:center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: black;
+     
+}
+.indica2,ul{
+     text-align:center;
+      font-size: 200%;
+}
+
+.conteiner{
+    height:auto;
+     width: 60%;
+     display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.formulario {
+  background-color: white;
+  width: 400px;
+  border-radius: 12px;
+  padding: 20px 40px;
+  box-shadow: 10px 10px 30px rgba(93, 99, 105, .2);
+  margin-bottom:5%;
+  justify-content: center;
+}
+
+input{
+	background-color: #fbfbfb; 
+	width: 85%; 
+	height: 4%; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1%; 
+	border-color: black; 
+    padding:2%;
+   
+ 
+}
+.nom:hover{
+   
+     animation:anima 2s infinite;
+}
+
+
+input.env{
+    width:30%;
+    margin-left:35%;
+    background:black;
+   color:white;
+   border-color:black;
+   border:solid;
+}
+.conteiner p{
+   
+    padding-top:7%;
+}
+textarea{
+ 
+	width: 89%; 
+	height: 15%; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 2px; 
+	border-color: black; 
+	
+  
+ 
+}
+label{
+    font-size:170%;
+    
+}
+
+body{
+background:#EBF5FB;
+
+	
+}
+.env:hover {
+    border-width: 10px;
+  animation:anima2 4s infinite;
+}
+
+
+
+}
+
+@media screen and (min-width: 1200px) 
+{
+    
+header{
+   display: flex;
+      background-color: black;
+      height: 10vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:0px 0px 0px 90px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:0px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 350px;
+  padding: 20px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 5vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
+  }
+  
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
+  
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 2vw;
+       font-weight:  bolder;
+       padding:1vw;
+    
+}
+
+.idioma{
+    color:white;
+}
+
+
+
+
+.flex{
+   display:flex;
+}
+.concat{
+    max-width: 45%; height: auto;
+    border-radius: 40%;
+    opacity:0.9;
+    padding:5%;
+    transform: scaleX(-1);
+    
+}
+
+.concat2{
+ max-width: 20%; 
+ height: auto; 
+padding:0% 0% 20% 10%;
+}
+
+.diseño{
+   margin:10px;
+      height:100%;
+     width: 40%;
+}
+
+
+.indica{
+    font-size: 350%;
+   padding:5%;
+    text-align:center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: black;
+     
+}
+.indica2,ul{
+     text-align:center;
+      font-size: 200%;
+}
+
+.conteiner{
+    height:auto;
+     width: 60%;
+     display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.formulario {
+  background-color: white;
+  width: 400px;
+  border-radius: 12px;
+  padding: 20px 40px;
+  box-shadow: 10px 10px 30px rgba(93, 99, 105, .2);
+  margin-bottom:5%;
+  justify-content: center;
+}
+
+input{
+	background-color: #fbfbfb; 
+	width: 85%; 
+	height: 4%; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1%; 
+	border-color: black; 
+    padding:2%;
+   
+ 
+}
+.nom:hover{
+   
+     animation:anima 2s infinite;
+}
+
+
+input.env{
+    width:30%;
+    margin-left:35%;
+    background:black;
+   color:white;
+   border-color:black;
+   border:solid;
+}
+.conteiner p{
+   
+    padding-top:7%;
+}
+textarea{
+ 
+	width: 89%; 
+	height: 15%; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 2px; 
+	border-color: black; 
+	
+  
+ 
+}
+label{
+    font-size:170%;
+    
+}
+
+body{
+background:#EBF5FB;
+
+	
+}
+.env:hover {
+    border-width: 10px;
+  animation:anima2 4s infinite;
+}
+
+
+
+
+}
+
+
+
+
+@keyframes anima{
+   0%{
+    border-color:green;    
+   }
+   50%{
+        border-color:red;  
+   }
+   100%{
+        border-color:blue;  
+   }
+}
+
+@keyframes anima2{
+   0%{
+   
+   opacity:1;
+   }
+   10%{
+       
+        border-left:red;
+   }
+   20%{
+        border-bottom:red;
+   }
+   30%{
+       
+        border-right:red;
+   }
+   40%{
+      
+        opacity:0.5;
+   }
+}
+
+
+@media screen and (min-width: 1450px) 
+{
+    
+header{
+   display: flex;
+      background-color: black;
+      height: 10vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:0px 0px 0px 110px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:0px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 370px;
+  padding: 30px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 5vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
+  }
+  
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
+  
+}
+
+header .nombre{
+     
+     display: flex;
+  
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 2vw;
+       font-weight:  bolder;
+       padding:1vw;
+    
+}
+
+.idioma{
+    color:white;
+        font-size: 2vh;
+}
+
+
+.flex{
+   display:flex;
+}
+.concat{
+    max-width: 45%; height: auto;
+    border-radius: 40%;
+    opacity:0.9;
+    padding:5%;
+    transform: scaleX(-1);
+    
+}
+
+.concat2{
+ max-width: 20%; 
+ height: auto; 
+padding:0% 0% 20% 10%;
+}
+
+.diseño{
+   margin:10px;
+      height:100%;
+     width: 40%;
+}
+
+
+.indica{
+    font-size: 350%;
+   padding:5%;
+    text-align:center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: black;
+     
+}
+.indica2,ul{
+     text-align:center;
+      font-size: 200%;
+}
+
+.conteiner{
+    height:auto;
+     width: 60%;
+     display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.formulario {
+  background-color: white;
+  width: 400px;
+  border-radius: 12px;
+  padding: 20px 40px;
+  box-shadow: 10px 10px 30px rgba(93, 99, 105, .2);
+  margin-bottom:5%;
+  justify-content: center;
+}
+
+input{
+	background-color: #fbfbfb; 
+	width: 85%; 
+	height: 4%; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1%; 
+	border-color: black; 
+    padding:2%;
+   
+ 
+}
+.nom:hover{
+   
+     animation:anima 2s infinite;
+}
+
+
+input.env{
+    width:30%;
+    margin-left:35%;
+    background:black;
+   color:white;
+   border-color:black;
+   border:solid;
+}
+.conteiner p{
+   
+    padding-top:7%;
+}
+textarea{
+ 
+	width: 89%; 
+	height: 15%; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 2px; 
+	border-color: black; 
+	
+  
+ 
+}
+label{
+    font-size:170%;
+    
+}
+
+body{
+background:#EBF5FB;
+
+	
+}
+.env:hover {
+    border-width: 10px;
+  animation:anima2 4s infinite;
+}
+
+
+}
+
+

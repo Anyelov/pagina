@@ -14,17 +14,20 @@
 </head>
 <body>
 <header>
-    <div class ="enca">
-    <a href= "index.html">
-    <img class="logo" src="Logo.png">
-    </a>
-    <h2 class ="nombre">Desarrollo digital</h2>
-    </div>
-    <nav class="navega">
-    <a href="blog.html" class="nav-link1">Blog</a>
-    <a href="fIlosofia.html" class="nav-link">Filosofía</a>
-    <a href="contacto.php" class="nav-link">Contacto</a>
-    <h2 class="idioma">Español</h2>
+    <a href="index.html" class="a">
+      <img src="Logo.png" class="logo">  </a>
+      <p class ="nombre">Desarrollo digital</p>
+     
+<nav>   
+<ul class ="navega">
+  <li>  <a  class="nav-link">Blog</a>  </li>
+  <li>  <a href="fIlosofia.html" class="nav-link">Filosofía</a>  </li>
+  <li>  <a href="contacto.php" class="nav-link">Contacto</a>  </li>
+  <li class="idioma">   Español  </li>
+
+
+
+    </ul>
 </nav>
 </header>    
 <article>
@@ -91,7 +94,7 @@
 </div>
 </article>
 <footer>
-    <p>Acerca de desarrollo..   privacidad  Políticas  Condiciones del Servicio  Ayuda</p>
+  
 </footer>    
 </body>
 </html>

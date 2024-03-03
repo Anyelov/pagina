@@ -1,541 +1,892 @@
-* {
-  padding: 0;
-  margin: 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    height:auto;
+     width: auto;
+}
+
+html {
+  font-family: "Libre Baskerville", "sans-serif";
+}
+
+/* telefono*/
+@media screen and (min-width: 200px)
+{
+header{
+   display: flex;
+      background-color: black;
+      height: 6vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:0px 0px 0px 0px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:0px;
+  list-style: none;
 
 }
 
-/* Estilos para dispositivos de pantalla pequeña */
-/*telefonos*/
-@media screen and (max-width: 568px) {
-  .nombre {
-      font-size: auto;
-  }
+.navega li {
 
-  header{
-      display: flex;
-      background-color: #424949;
-      height: 10vh;
-      justify-content: space-between;
-      align-items: center;
+  width: auto;
+  padding: 7px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 1vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
   }
   
-  .navega{
-      justify-content: flex-end;
-    }
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
   
-  @font-face {
-      font-family: encabezado;
-      src: url(Poiret_One/PoiretOne-Regular.ttf);
-  }
-  
-  header .enca{
-      white-space: nowrap;
-      align-items: center;
-      display: flex; 
-  background-color: black;
-  }
-  .logo,.nombre{
-      flex: 1;
-  }
-  
-  .nombre{
-      padding: 2px;
-      display: flex;
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
       color: white;
-      font-family: encabezado;
-      font-weight: normal;
-      font-size: 3vw;
-       background-color: black;
+      
+      font-size: 1vh;
        font-weight:  bolder;
-  }
-  
-  /* imagenes poner aqui */
-  
-  
-  .logo{
-      height: 10vh;
-      max-height: 100%;
-  }
-  
-  .Cfoto{                   /* foto de la pagina motos */
-  
+       
+    padding:10px;
+}
+
+.idioma{
+    color:white;
+     font-size: 0.5vh;
+}
+
+
+.video{
+     height: 17vh;
     
-       height: 40vh;
-      max-height: 100%;
-      width: 100%;
+animation: animacion  10s infinite ;
+    
+}
+
+.video img {
+    max-width: auto; 
+    height: 100%;
+     
+    box-sizing: border-box;
+    position: relative;
+  
+ margin: 30px 0px 0px 32%;
+ 
+  
+   border:black 5px double;
+  padding:10px;
+  
+  border-radius:5%;
+  
+}
+
+ 
+
+
+.resumen,.clientes{
+     border-top:black 5px double;
+  height: 17vh;
+   display: flex;
+
+}
+
+
+.resumen:hover,.clientes:hover{
+ 
+    animation: animacion  1.5s infinite ;
+   
+}
+
+.resumen div, .clientes div{
+    font-size: 1vh;
+    margin:50px 0px 0px -1%;
+   box-sizing: border-box;
+    position: relative;
+        }
+        
+        
+
+
+.resumen p, .clientes p{
+   
+ font-size: 1.5vh;
+font-weight:  bolder;
+transform: rotate(-90deg);
+margin:50px 0px 300px 0px;
+ 
+}
+
+
+
+
+
+
+.links{
+    border-top:black 5px double;
+    display: flex;
+    height: 1vh;
+}
+.links img{
+     
+    max-width: 10%; 
+    height: auto;
+margin:5px 0px 0px 20px;
+
+}
+
+
+footer{
+    
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    text-align: center;
+    word-break: keep-all;
+    color: #7e7e7e;
+}
+
+
+}
+
+
+/*tablet*/
+@media screen and (min-width: 568px) {
+   
+header{
+   display: flex;
+      background-color: black;
+      height: 10vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:20px 0px 0px 40px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:10px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 30px;
+  padding: 10px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 1.5vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
   }
   
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
   
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 2vh;
+       font-weight:  bolder;
+       
+    padding:24px;
+}
+
+.idioma{
+    color:white;
+
+}
+
+
+.video{
+     height: 20vh;
+    
+animation: animacion  10s infinite ;
+    
+}
+
+.video img {
+    max-width: auto; 
+    height: 110%;
+     
+    box-sizing: border-box;
+    position: relative;
   
+ margin: 40px 0px 0px 32%;
+ 
   
-  nav{
-      white-space: nowrap;
-      align-items: center;
-      display: flex;
-      flex: 1;  
-     padding-right: 2%;
+   border:black 5px double;
+  padding:10px;
+  
+  border-radius:5%;
+  
+}
+
+ 
+
+
+.resumen,.clientes{
+     border-top:black 5px double;
+  height: 20vh;
+   display: flex;
+
+}
+
+
+.resumen:hover,.clientes:hover{
+ 
+    animation: animacion  1.5s infinite ;
+   
+}
+
+.resumen div, .clientes div{
+    font-size: 1.5vh;
+    margin:60px 0px 0px -1%;
+   box-sizing: border-box;
+    position: relative;
+        }
+        
+        
+
+
+.resumen p, .clientes p{
+   
+ font-size: 3vh;
+font-weight:  bolder;
+transform: rotate(-90deg);
+margin:100px 0px 300px 0px;
+ 
+}
+
+
+
+
+
+
+.links{
+    border-top:black 5px double;
+    display: flex;
+    height: 5vh;
+}
+.links img{
+     
+    max-width: 10%; 
+    height: auto;
+margin:15px 0px 0px 20px;
+
+}
+
+
+footer{
+    
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    text-align: center;
+    word-break: keep-all;
+    color: #7e7e7e;
+}
+
+
+
+}
+
+
+
+/*pc*/
+@media screen and (min-width: 900px) {
+   
+header{
+   display: flex;
+      background-color: black;
+      height: 10vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:0px 0px 0px 80px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:0px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 350px;
+  padding: 20px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 4vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
   }
   
-  .idioma{
-      padding: 3px;
-      text-decoration: none;
-      font-weight: normal;
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
+  
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
+      color: white;
+      
       font-size: 2vw;
-  }
-  .nav-link,.idioma{
-      color: white;
-      font-family: encabezado;
-  }
-  .nav-link{
-      padding-left: 11%;
-      text-decoration: none;
-      font-size: 11px;
-      font-weight:  bolder;
-  }
-  
-  
-  
-  article {
-   
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    min-height: 220px; /* Cambiamos height por min-height para que el contenido no se desborde en pantallas pequeñas */
-   
-    
-  }
-  
-  article h2 {
-    position: relative;
-   
-    font-family: encabezado;
-    font-size: 2.5vw; /* Usamos unidades relativas para el tamaño de fuente */
-  
-  }
-  
-  
-  
-  
-  
-aside {
-  padding-top:20px;
-    height: 100px;
-
-  
-  }
- 
- .Resumen{
-      position: relative;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-     font-size: 3vw;
-     padding-top:5px;
- }
-  
-  aside p {
- margin:10px;
-    font-size: 3vw; /* Usamos unidades relativas para el tamaño de fuente */
-   
-  }
-  
-  
-  
-  
-  footer {
-   
-    height: 201px;
-    background-color: #424949;
-   
-  
-  }
-  
-  .Clientes {
-  
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-     font-size: 3vw;
-     padding-top:5px;
-        
-}
-  
-  footer p {
- 
-    position: relative;
-    align-self:flex-start;
-    font-family: encabezado;
-    font-size: 3vw; 
-    position: relative; 
-    top: 10px;
-        
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Estilos para dispositivos de pantalla mediana */
-
-@media screen and (min-width: 569px) and (max-width: 1200px) {
-  .nombre {
-      font-size: auto;
-  }
-
-  header{
-      display: flex;
-      background-color: #424949;
-      height: 10vh;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  .navega{
-      justify-content: flex-end;
-    }
-  
-  @font-face {
-      font-family: encabezado;
-      src: url(Poiret_One/PoiretOne-Regular.ttf);
-  }
-  
-  header .enca{
-      white-space: nowrap;
-      align-items: center;
-      display: flex; 
-  background-color: black;
-  }
-  .logo,.nombre{
-      flex: 1;
-  }
-  
-  .nombre{
-      padding: 2px;
-      display: flex;
-      color: white;
-      font-family: encabezado;
-      font-weight: normal;
-      font-size: 3vw;
-       background-color: black;
        font-weight:  bolder;
-  }
-  
-  /* imagenes poner aqui */
-  
-  
-  .logo{
-      height: 10vh;
-      max-height: 100%;
-  }
-  
-  .Cfoto{                   /* foto de la pagina motos */
-  
-    margin-bottom: 1%;
-       height: 35vh;
-      max-height: 100%;
-      width: 100%;
-  }
-  
-  
-  
-  
-  nav{
-      white-space: nowrap;
-      align-items: center;
-      display: flex;
-      flex: 1;  
-     padding-right: 2%;
-  }
-  
-  .idioma{
-      padding: 3px;
-      text-decoration: none;
-      font-weight: normal;
-      font-size: 1.5vw;
-     padding-left: 14px;
-  }
-  .nav-link,.idioma{
-      color: white;
-      font-family: encabezado;
-  }
-  .nav-link{
-      padding-left: 20%;
-      text-decoration: none;
-      font-size: 25px;
-      font-weight:  bolder;
-  }
-  
-  
-  
-  article {
-   
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    min-height: 220px; /* Cambiamos height por min-height para que el contenido no se desborde en pantallas pequeñas */
-   
+       padding:1vw;
     
-  }
-  
-  article h2 {
-    position: relative;
-   
-    font-family: encabezado;
-    font-size: 2.5vw; /* Usamos unidades relativas para el tamaño de fuente */
-  
-  }
-  
-  
-  
-  
-  
-aside {
-  padding-top:50px;
-    height: 250px;
-   
-  
-  }
- 
- .Resumen{
-      position: relative;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-     font-size: 3vw;
-     padding-top:5px;
- }
-  
-  aside p {
- margin:10px;
-    font-size: 3vw; /* Usamos unidades relativas para el tamaño de fuente */
-   
-  }
-  
-  
-  
-  
-  footer {
-   
-    height: 201px;
-    background-color: #424949;
-   
-  
-  }
-  
-  .Clientes {
-  
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-     font-size: 3vw;
-     padding-top:5px;
-        
 }
-  
-  footer p {
- 
+
+.idioma{
+    color:white;
+        font-size: 1vh;
+}
+
+
+.video{
+     height: 40vh;
+    
+animation: animacion  10s infinite ;
+    
+}
+
+.video img {
+    max-width: auto; 
+    height: 115%;
+     
+    box-sizing: border-box;
     position: relative;
-    align-self:flex-start;
-    font-family: encabezado;
-    font-size: 3vw; 
-    position: relative; 
-    top: 15px;
+  
+ margin: 40px 0px 0px 32%;
+ 
+  
+   border:black 5px double;
+  padding:10px;
+  
+  border-radius:5%;
+  
+}
+
+ 
+
+
+.resumen,.clientes{
+     border-top:black 5px double;
+  height: 40vh;
+   display: flex;
+
+}
+
+
+.resumen:hover,.clientes:hover{
+ 
+    animation: animacion  1.5s infinite ;
+   
+}
+
+.resumen div, .clientes div{
+    font-size: 4vh;
+    margin:80px 0px 0px -1%;
+   box-sizing: border-box;
+    position: relative;
+        }
         
+        
+
+
+.resumen p, .clientes p{
+   
+ font-size: 3vh;
+font-weight:  bolder;
+transform: rotate(-90deg);
+margin:3% 0px 5% 6%;
+ 
 }
 
 
 
 
-      }
 
 
+.links{
+    border-top:black 5px double;
+    display: flex;
+    height: 10vh;
+}
+.links img{
+     
+    max-width: 10%; 
+    height: auto;
+margin:15px 0px 0px 20px;
+
+}
 
 
+footer{
+    
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    text-align: center;
+    word-break: keep-all;
+    color: #7e7e7e;
+}
 
-      /* Estilos para dispositivos de pantalla grande computadora */
+}
 
-@media screen and (min-width: 1201px) {
-  
-  .nombre {
-      font-size: auto;
-  }
 
-  header{
-      display: flex;
-      background-color: #424949;
+@media screen and (min-width: 1200px) 
+{
+    
+header{
+   display: flex;
+      background-color: black;
       height: 10vh;
-      justify-content: space-between;
-      align-items: center;
+    
+}
+
+.navega {
+  display: flex;
+  margin:0px 0px 0px 90px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:0px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 350px;
+  padding: 20px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 5vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
   }
   
-  .navega{
-      justify-content: flex-end;
-    }
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
   
-  @font-face {
-      font-family: encabezado;
-      src: url(Poiret_One/PoiretOne-Regular.ttf);
-  }
-  
-  header .enca{
-      white-space: nowrap;
-      align-items: center;
-      display: flex; 
-  background-color: black;
-  }
-  .logo,.nombre{
-      flex: 1;
-  }
-  
-  .nombre{
-      padding: 2px;
-      display: flex;
+}
+
+header .nombre{
+     
+     display: flex;
+  justify-content: flex-start;
+     text-align: center; 
+     background:black;
       color: white;
-      font-family: encabezado;
-      font-weight: normal;
-      font-size: 3vw;
-   
+      
+      font-size: 2vw;
        font-weight:  bolder;
-  }
-  
-  /* imagenes poner aqui */
-  
-  
-  .logo{
-      height: 10vh;
-      max-height: 100%;
-  }
-  
-  .Cfoto{                   /* foto de la pagina motos */
-  
-    margin-bottom: 1%;
-       height: 67vh;
-      max-height: 100%;
-     width: 100%;
-  }
-  
-  
-  
-  nav{
-      white-space: nowrap;
-      align-items: center;
-      display: flex;
-      flex: 1;  
-     padding-right: 1%;
-  }
-  
-  .idioma{
-      padding: 40px;
-      text-decoration: none;
-      font-weight: normal;
-      font-size: 1vw;
-  }
-  .nav-link,.idioma{
-      color: white;
-      font-family: encabezado;
-  }
-  .nav-link{
-      padding-left: 20%;
-      text-decoration: none;
-      font-size: 40px;
-      font-weight:  bolder;
-  }
-  
-  
-  
-  article {
-   
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    min-height: 650px; /* Cambiamos height por min-height para que el contenido no se desborde en pantallas pequeñas */
-   
+       padding:1vw;
     
-  }
-  
-  article h2 {
+}
+
+.idioma{
+    color:white;
+}
+
+
+.video{
+     height: 40vh;
+    
+animation: animacion  10s infinite ;
+    
+}
+
+.video img {
+    max-width: auto; 
+    height: 115%;
+     
+    box-sizing: border-box;
     position: relative;
-   
-    font-family: encabezado;
-    font-size: 2.5vw; /* Usamos unidades relativas para el tamaño de fuente */
   
+ margin: 40px 0px 0px 32%;
+ 
+  
+   border:black 5px double;
+  padding:10px;
+  
+  border-radius:5%;
+  
+}
+
+ 
+
+
+.resumen,.clientes{
+     border-top:black 5px double;
+  height: 40vh;
+   display: flex;
+
+}
+
+
+.resumen:hover,.clientes:hover{
+ 
+    animation: animacion  1.5s infinite ;
+   
+}
+
+.resumen div, .clientes div{
+    font-size: 4vh;
+    margin:90px 0px 0px -1%;
+   box-sizing: border-box;
+    position: relative;
+        }
+        
+        
+
+
+.resumen p, .clientes p{
+   
+ font-size: 3vh;
+font-weight:  bolder;
+transform: rotate(-90deg);
+margin:3% 0px 5% 6%;
+ 
+}
+
+
+
+
+
+
+.links{
+    border-top:black 5px double;
+    display: flex;
+    height: 10vh;
+}
+.links img{
+     
+    max-width: 10%; 
+    height: auto;
+margin:15px 0px 0px 20px;
+
+}
+
+
+footer{
+    
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    text-align: center;
+    word-break: keep-all;
+    color: #7e7e7e;
+}
+
+
+}
+
+
+
+
+@media screen and (min-width: 1450px) 
+{
+    
+header{
+   display: flex;
+      background-color: black;
+      height: 10vh;
+    
+}
+
+.navega {
+  display: flex;
+  margin:0px 0px 0px 110px;
+  width: auto ;
+  letter-spacing: 3px;
+  padding:0px;
+  list-style: none;
+
+}
+
+.navega li {
+
+  width: auto;
+  height: 370px;
+  padding: 30px;
+  font-weight:  bolder;
+ 
+        }
+        
+ li a{
+      background-color:black;
+    font-size: 5vh;
+    color: white;
+    text-decoration: none;
+        transition: background-color 1.5s;
   }
   
+li a:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
+ border-radius: 30%;
+}
+
+
+.logo{
+
+ max-width: auto;
+ height: 100%;
   
+}
+
+header .nombre{
+     
+     display: flex;
   
+     text-align: center; 
+     background:black;
+      color: white;
+      
+      font-size: 2vw;
+       font-weight:  bolder;
+       padding:1vw;
+    
+}
+
+.idioma{
+    color:white;
+        font-size: 2vh;
+}
+
+
+.video{
+     height: 40vh;
+    
+animation: animacion  10s infinite ;
+    
+}
+
+.video img {
+    max-width: auto; 
+    height: 115%;
+     
+    box-sizing: border-box;
+    position: relative;
   
-aside {
-  padding-top:30px;
-    height: 450px;
+ margin: 40px 0px 0px 32%;
+ 
+  
+   border:black 5px double;
+  padding:10px;
+  
+  border-radius:5%;
+  
+}
+
+ 
+
+
+.resumen,.clientes{
+     border-top:black 5px double;
+  height: 40vh;
+   display: flex;
+
+}
+
+
+.resumen:hover,.clientes:hover{
+ 
+    animation: animacion  1.5s infinite ;
    
+}
+
+.resumen div, .clientes div{
+    font-size: 4vh;
+    margin:120px 0px 0px -1%;
+   box-sizing: border-box;
+    position: relative;
+        }
+        
+        
+
+
+.resumen p, .clientes p{
+   
+ font-size: 3vh;
+font-weight:  bolder;
+transform: rotate(-90deg);
+margin:3% 0px 5% 6%;
+ 
+}
+
+
+
+
+
+
+.links{
+    border-top:black 5px double;
+    display: flex;
+    height: 10vh;
+}
+.links img{
+     
+    max-width: 10%; 
+    height: auto;
+margin:15px 0px 0px 20px;
+
+}
+
+
+footer{
+    
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    text-align: center;
+    word-break: keep-all;
+    color: #7e7e7e;
+}
+
+
+}
+
+
+
+
+@keyframes animacion{
+
+  0%{
+    background: white;
+
+  }
+   20%{
+      
+      background: #E7E6E6;
+ 
+    }
+     40%{
+      
+      background:  #D2D2D2;
+ 
+    }
+     60%{
+      
+      background: #D2D2D2;
+ 
+    }
+     80%{
+      
+      background:  #E7E6E6;
+ 
+    }
+     100%{
+      
+      background: white;
+ 
+    }
+  }
+
+/*@keyframes animacion2{
   
+  0%{
+    opacity:1;
   }
  
- .Resumen{
-      position: relative;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-     font-size: 3vw;
-     padding-top:20px;
- }
-  
-  aside p {
- margin:40px;
-    font-size: 3vw; /* Usamos unidades relativas para el tamaño de fuente */
-   
+     100%{
+       opacity:1;
+    }
   }
-  
-  
-  footer {
-   
-    height: 201px;
-    background-color: #424949;
-   
-  
-  }
-  
-  .Clientes {
-  
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-     font-size: 4vw;
-     padding-top:15px;
-        
-}
-  
-  footer p {
- 
-    position: relative;
-    align-self:flex-start;
-    font-family: encabezado;
-    font-size: 3vw; 
-    position: relative; 
-    top: 30px;
-        
-}
-}
+*/
+
+

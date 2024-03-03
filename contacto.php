@@ -10,59 +10,66 @@
 </head>
 <body>
 <header>
-    <div class ="enca">
-    <a href= "index.html">
-    <img class="logo" src="Logo.png">
-    </a>
-    <h2 class ="nombre">Desarrollo digital</h2>
-    </div>
-<nav class="navega">
-    <a href="blog.php" class="nav-link" id="nav-link3">Blog</a>
-    <a href="fIlosofia.html" class="nav-link" id="nav-link2">Filosofía</a>
-    <a href="contacto.php" class="nav-link" id="nav-link1">Contacto</a>
-    <h2 class="idioma">Español</h2>
+   <a href="index.html" class="a">
+      <img src="Logo.png" class="logo">  </a>
+      <p class ="nombre">Desarrollo digital</p>
+     
+<nav>   
+<ul class ="navega">
+  <li>  <a href="blog.php" class="nav-link">Blog</a>  </li>
+  <li>  <a href="fIlosofia.html" class="nav-link">Filosofía</a>  </li>
+  <li>  <a class="nav-link">Contacto</a>  </li>
+  <li class="idioma">   Español  </li>
+
+    </ul>
 </nav>
 </header>
-<div class="conteiner">    
-<article class = "global">
-  
 
-<div class ="receptor">
-    <h2 class="indica">Indícame tus datos y me pondré en contacto contigo a la brevedad</h2>
-    <form method="post">
-    <input class="nom" type="text" name="name" placeholder="Nombre Completo">
-    <input class="nom" type="text" name="tele" placeholder="Numero teléfonico">
-    <input class="nom" type="email" name="correo" placeholder="Correo">
-    <textarea class="com" name="coment" rows="4" cols="35" placeholder="Escribe tu comentario aquí"></textarea>
-    <input class="env"type="submit" name ="register">
-</form>
-<?php 
-include("registrar.php");
-?>
-</div>
-</article>
-<div class="diseño">
-<aside>
+<div class="flex">
+ <div class="diseño">
+    <h2 class="indica">Contacto</h2>
+    <p class="indica2">Si deseas mas información o tienes alguna duda no esperes mas y te atenderemos a la brevedad aqui te dejo mi whatsapp.</p>
+   
 
-<h2 class="titre">Contacto</h2>
-<img class = "concat" src="Arturo.jpg">
+
+
 <div class="emisor"> 
+<img class = "concat" src="Arturo.jpg">
+<a href="#">
+<img class = "concat2" src="whatsapp.png"></a>
 <ul>
-    <li>Arturo Sebastian Mercado Martíenz</li>
-    <li>-- ---- ----</li>
-    <li>-- ---- ----</li>
+    <li>Arturo Sebastian Mercado Martínez</li>
+    <li>---- ---- ---- ---- ----</li>
     <li>Contacto@asmagno.com</li>
 </ul> 
 </div>
 
 </div>
-</aside>
+
+
+
+<div class="conteiner"> 
+
+    <form method="post" class="formulario">
+       
+    <p><label>Nombre  *</p><input class="nom" type="text" name="name" placeholder="Escribe tu nombre"></label>
+   <p> <label>Telefono *</p><input class="nom" type="text" name="tele" placeholder="Escribe tu telefono"></label>
+  <p> <label>Email *</p><input class="nom" type="email" name="correo" placeholder="Escribe tu Correo"></label>
+ <p>  <label>Comentario *</p> <textarea class="com" name="coment" rows="4" cols="35" placeholder="Escribe tu comentario aquí"></textarea></label>
+   <p> <input class="env"type="submit" name ="register"></p>
+</form>
+
+<!--<?php 
+include("registrar.php");
+?>     QUITAR LAS FLECHAS-->
+
+
 </div>
 
-<div class = "pie">
-<footer>
-    <p>camino</p>
-</footer>    
-</div> 
+</div>
+
+
+
+
 </body>
 </html>
